@@ -1,0 +1,219 @@
+<!DOCTYPE html 
+>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAXX Energy - Enterprise Data Access Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Material Design App Bar -->
+    <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <div class="logo">
+                    <img src="Branding/MAXX-Energy-White.png" alt="MAXX Energy Logo" class="logo-image">
+                </div>
+                <span class="mdc-top-app-bar__title">Enterprise Data Access Portal</span>
+            </section>
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+                <nav class="mdc-top-app-bar__navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="homepage.html" class="nav-link active">
+                                <span class="material-icons">home</span>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="public_data.html" class="nav-link">
+                                <span class="material-icons">public</span>
+                                <span>Public Data</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">
+                                <span class="material-icons">lock</span>
+                                <span>Private Data</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link login-btn">
+                                <span class="material-icons">login</span>
+                                <span>Login</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="Images/AdobeStock_809523421.jpeg" alt="Solar Energy" class="hero-img">
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">Welcome to the Enterprise Data Access Portal</h1>
+                    <p class="hero-subtitle">View solar plant generation and revenue data — tailored for your role.</p>
+                    <div class="hero-actions">
+                        <button class="mdc-button mdc-button--raised primary-button" onclick="getStarted()">
+                            <span class="mdc-button__ripple"></span>
+                            <span class="mdc-button__label">Get Started</span>
+                        </button>
+                        <button class="mdc-button mdc-button--outlined secondary-button" onclick="learnMore()">
+                            <span class="mdc-button__ripple"></span>
+                            <span class="mdc-button__label">Learn More</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">Platform Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">analytics</span>
+                        </div>
+                        <h3 class="feature-title">Real-time Analytics</h3>
+                        <p class="feature-description">Monitor solar plant performance with live data feeds and comprehensive analytics.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">security</span>
+                        </div>
+                        <h3 class="feature-title">Secure Access</h3>
+                        <p class="feature-description">Role-based access control ensures data security and privacy compliance.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <span class="material-icons">dashboard</span>
+                        </div>
+                        <h3 class="feature-title">Custom Dashboards</h3>
+                        <p class="feature-description">Personalized dashboards tailored to your specific role and requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Access Section -->
+        <section class="data-section">
+            <div class="container">
+                <div class="data-grid">
+                    <div class="data-card public-data">
+                        <div class="card-header">
+                            <span class="material-icons card-icon">public</span>
+                            <h3>Public Data</h3>
+                        </div>
+                        <p>Access publicly available solar plant information and general statistics.</p>
+                        <a href="public_data.html" class="mdc-button mdc-button--outlined">
+                            <span class="mdc-button__ripple"></span>
+                            <span class="mdc-button__label">View Public Data</span>
+                        </a>
+                    </div>
+
+                    <div class="data-card private-data">
+                        <div class="card-header">
+                            <span class="material-icons card-icon">lock</span>
+                            <h3>Private Data</h3>
+                        </div>
+                        <p>Login to access role-specific dashboards and detailed reports.</p>
+                        <div class="login-placeholder">
+                            <span class="material-icons">login</span>
+                            <p>Login Required</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Material Design Footer -->
+    <footer class="mdc-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="aboutus.html" class="footer-link">
+                    <span class="material-icons">info</span>
+                    <span>About Us</span>
+                </a>
+            </div>
+            <div class="footer-section">
+                <p class="copyright">&copy; 2025 MAXX Energy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Authentication Scripts -->
+    <script src="auth_service.js"></script>
+
+    <script>
+        // Initialize authentication service
+        const authService = new MAXXEnergyAuthService();
+
+        function getStarted() {
+            // Redirect to public data page to get started
+            window.location.href = 'public_data.html';
+        }
+
+        function learnMore() {
+            // Redirect to about us page to learn more
+            window.location.href = 'aboutus.html';
+        }
+
+        // Add click event for login button
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginBtn = document.querySelector('.login-btn');
+            if (loginBtn) {
+                loginBtn.addEventListener('click', function(e) {
+                 window.location.href = "login.html";
+
+                    // Check if user is already authenticated
+                    if (authService.isAuthenticated) {
+                        // If authenticated, redirect to private data page - Not yet implemented
+                       window.location.href = "about:blank";
+                    } else {
+                        // If not authenticated, redirect to private data page to show login form
+                        window.location.href = "login.html";
+                    }
+                });
+            }
+
+            // Update login button text if user is authenticated
+            updateLoginButton();
+        });
+
+        // Update login button based on authentication status
+        function updateLoginButton() {
+            const loginBtn = document.querySelector('.login-btn');
+            if (loginBtn && authService.isAuthenticated) {
+                const user = authService.getCurrentUser();
+                loginBtn.innerHTML = `
+                    <span class="material-icons">account_circle</span>
+                    <span>${user ? user.username : 'Account'}</span>
+                `;
+                loginBtn.style.background = 'rgba(255, 255, 255, 0.2)';
+            }
+        }
+
+        // Listen for authentication events
+        window.addEventListener('userLogin', function() {
+            updateLoginButton();
+        });
+
+        window.addEventListener('userLogout', function() {
+            updateLoginButton();
+        });
+    </script>
+</body>
+</html>
