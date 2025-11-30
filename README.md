@@ -66,19 +66,19 @@ This repository includes:
 > Update file names if needed.
 
 ### **Homepage**
-![Homepage](<img width="1902" height="891" alt="home-page" src="https://github.com/user-attachments/assets/132c51e2-fe1c-4a15-bf8b-ce4b11ffbc7a" />)
+<img width="1902" height="891" alt="home-page" src="https://github.com/user-attachments/assets/132c51e2-fe1c-4a15-bf8b-ce4b11ffbc7a" />
 
 ### **Newsroom**
-![Newsroom](<img width="1889" height="888" alt="the-newsroom" src="https://github.com/user-attachments/assets/52e0d69c-930f-42ef-af91-916b91c4f8d8" />)
+<img width="1889" height="888" alt="the-newsroom" src="https://github.com/user-attachments/assets/52e0d69c-930f-42ef-af91-916b91c4f8d8" />
 
 ### **About Us**
-![About Us](<img width="1910" height="893" alt="about-us" src="https://github.com/user-attachments/assets/6be2325b-34db-40c6-9537-e58a60098e7c" />)
+<img width="1910" height="893" alt="about-us" src="https://github.com/user-attachments/assets/6be2325b-34db-40c6-9537-e58a60098e7c" />
 
 ### **Privacy Policy**
-![Privacy Policy](<img width="1884" height="895" alt="privacy-policy" src="https://github.com/user-attachments/assets/f2ae7574-3e4d-4cb8-abcc-ed2641157445" />)
+<img width="1884" height="895" alt="privacy-policy" src="https://github.com/user-attachments/assets/f2ae7574-3e4d-4cb8-abcc-ed2641157445" />
 
 ### **Terms of Use**
-![Terms of Use](<img width="1892" height="891" alt="terms-of-use" src="https://github.com/user-attachments/assets/f29cbb47-c26a-4d39-ae88-96ac6fbed1fd" />)
+<img width="1892" height="891" alt="terms-of-use" src="https://github.com/user-attachments/assets/f29cbb47-c26a-4d39-ae88-96ac6fbed1fd" />
 
 ---
 
