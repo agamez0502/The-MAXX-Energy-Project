@@ -63,8 +63,6 @@ This repository includes:
 
 ## 🖼️ Screenshots 📸✨
 
-> Update file names if needed.
-
 ### **Homepage** 🏠  
 <img width="1902" height="891" alt="home-page" src="https://github.com/user-attachments/assets/132c51e2-fe1c-4a15-bf8b-ce4b11ffbc7a" />
 
