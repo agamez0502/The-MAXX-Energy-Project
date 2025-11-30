@@ -122,6 +122,6 @@ Training files to understand theme structure and backend logic.
 ---
 
 ## 🙌 Acknowledgments
-- **Diego (Data Team)** — Homepage content  
-- **David (Security Team)** — Compliance pages  
-- **Ashley (PM)** — User flow and structure guidance  
+- **The DARS Team**
+
+---
